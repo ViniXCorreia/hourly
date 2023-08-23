@@ -6,4 +6,4 @@ O sistema Hourly foi desenvolvido com o ituito de ser uma plataforma simples e f
 
 ## Equipe:
 
-https://github.com/ViniXCorreia
+<https://github.com/ViniXCorreia>
