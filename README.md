@@ -7,11 +7,19 @@ O sistema Hourly foi desenvolvido com o ituito de ser uma plataforma simples e f
 ## Equipe:
 
 <table>
-  <tr>
-    <td width="100px">
+  <tbody><tr>
+    <td align="center">
       <a href="https://github.com/ViniXCorreia">
-        <img alt="Vinicius Martins Correia" width="100px" height="100px" src="https://avatars.githubusercontent.com/u/79664002?v=4" />
-        Vinicius Martins Correia
+        <img src="https://avatars.githubusercontent.com/u/79664002?v=4" width="100px" height="100px" alt="ViniXCorreia" style="max-width: 100%;">
+        <br>
+        <sub><b>Vinícius Martins Correia</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Matteus777">
+        <img src="https://avatars.githubusercontent.com/u/41447631?v=4" width="100px" height="100px" alt="Matteus777" style="max-width: 100%;">
+        <br>
+        <sub><b>Matteus Camargo de Almeida</b></sub>
       </a>
     </td>
   </tr>
