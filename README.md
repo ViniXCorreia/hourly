@@ -8,7 +8,7 @@ O sistema Hourly foi desenvolvido com o ituito de ser uma plataforma simples e f
 
 <table>
   <tr>
-    <td>
+    <td width="100px">
       <a href="https://github.com/ViniXCorreia">
         <img alt="Vinicius Martins Correia" width="100px" height="100px" src="https://avatars.githubusercontent.com/u/79664002?v=4" />
         Vinicius Martins Correia
