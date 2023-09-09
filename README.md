@@ -33,4 +33,10 @@
   <li>Avaliação de serviços: Os usuários podem dar notas de 0 - 5 para os atendimentos recebidos e também deixar um breve comentários sobre as suas impressões. Isso auxília o empresário a garantir que os serviços entregues dentro do seu estabelecimento estejam sempre da melhor forma possível para os seus clintes, pois é através desses feedbacks manter o que está dando certo e melhorar pontos que julgar necessário.</li>
   <li>Fidelização: O estabelecimento pode criar um plano de fidelização para os seus clientes, fazendo com que os mesmos recebam uma porcentagem de desconto depois de um determinado número de serviços executados. Isso faz com que os clientes se tornem assiduos do estabelecimento</li>
 </ul>
+<h2>Tecnologias Utilizadas</h2>
+<ul>
+  <li>FrontEnd: HTML, CSS, Javascript associados ao framework Angular</li>
+  <li>Backend: Node.js utilizando framework NestJs</li>
+  <li>Banco de dados: PostgreSQL</li>
+</ul>
 
