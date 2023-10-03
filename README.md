@@ -39,4 +39,114 @@
   <li>Backend: Node.js utilizando framework NestJs</li>
   <li>Banco de dados: PostgreSQL</li>
 </ul>
-
+<h2>Estrutura do backend do projeto</h2>
+```
+src
+├───infra
+│   └───database
+│       ├───entities
+│       ├───migration
+│       └───proxy
+├───_modules
+│   ├───collaborator
+│   │   ├───infra
+│   │   │   └───dtos
+│   │   └───useCases
+│   │       ├───closeSchedule
+│   │       ├───createCollaborator
+│   │       ├───deleteCollaborator
+│   │       ├───findAllCollaborators
+│   │       ├───findAllCollaboratorSchedules
+│   │       ├───getCollaboratorQueueHistory
+│   │       ├───getCollaboratorScheduleHistory
+│   │       ├───getOneById
+│   │       ├───getOneByToken
+│   │       ├───getReports
+│   │       ├───getServicesFromCompany
+│   │       └───updateCollaborator
+│   ├───company
+│   │   ├───infra
+│   │   │   ├───controller
+│   │   │   └───dto
+│   │   └───useCases
+│   │       ├───clearQueue
+│   │       ├───createCompany
+│   │       ├───deleteCompany
+│   │       ├───findAllCollaboratorsLoggedCompany
+│   │       ├───findAllCompanyCollaborators
+│   │       ├───findAllCompanySchedules
+│   │       ├───findAllCompanyServices
+│   │       ├───findAllServicesLoggedCompany
+│   │       ├───findCompanyById
+│   │       ├───findCompanyLike
+│   │       ├───getAllCompanies
+│   │       ├───getCompanyConfig
+│   │       ├───getCompanyQueue
+│   │       ├───getCompanyRatings
+│   │       ├───getReports
+│   │       └───updateCompany
+│   ├───customer
+│   │   ├───dto
+│   │   ├───infra
+│   │   └───useCase
+│   │       ├───cancelQueue
+│   │       ├───enterQueue
+│   │       ├───getCustomerSchedule
+│   │       ├───getHistory
+│   │       ├───getOneByToken
+│   │       ├───getQueue
+│   │       ├───ratingSchedule
+│   │       ├───setQueueStarted
+│   │       └───updatedCustomer
+│   ├───person
+│   │   ├───infra
+│   │   │   ├───controller
+│   │   │   └───dto
+│   │   └───useCase
+│   │       ├───changePassword
+│   │       ├───createPerson
+│   │       ├───deletePerson
+│   │       ├───findAllPersons
+│   │       ├───findOnePersonByDocumentNumber
+│   │       ├───findOnePersonByEmail
+│   │       ├───findOnePersonById
+│   │       ├───findOnePersonByName
+│   │       ├───forgotPassword
+│   │       ├───login
+│   │       ├───recoveryPassoword
+│   │       ├───setRoleToken
+│   │       ├───updatePerson
+│   │       └───validatePerson
+│   ├───schedule
+│   │   ├───infra
+│   │   │   ├───controller
+│   │   │   └───dto
+│   │   └───useCases
+│   │       ├───createSchedule
+│   │       ├───deleteScheduleBy
+│   │       ├───findAllSchedulesByCompany
+│   │       ├───findScheduleById
+│   │       ├───finishSchedule
+│   │       ├───getAvailableSchedule
+│   │       ├───notAttend
+│   │       ├───ratingSchedule
+│   │       ├───returnScheduelFinish
+│   │       ├───scheduleCron
+│   │       └───updateSchedule
+│   └───service
+│       ├───infra
+│       │   ├───controller
+│       │   └───dto
+│       └───useCase
+│           ├───createService
+│           ├───findAllServicesByCompanyId
+│           ├───findServiceById
+│           ├───removeServiceById
+│           └───updateServiceById
+└────shared
+    ├───auth
+    ├───crypto
+    ├───mailModule
+    └───protocols
+        └───dto
+```
