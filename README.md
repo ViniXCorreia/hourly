@@ -40,8 +40,7 @@
   <li>Banco de dados: PostgreSQL</li>
 </ul>
 <h2>Estrutura do backend do projeto</h2>
-```
-src
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>src
 ├───infra
 │   └───database
 │       ├───entities
@@ -143,10 +142,10 @@ src
 │           ├───findServiceById
 │           ├───removeServiceById
 │           └───updateServiceById
-└────shared
+└───_shared
     ├───auth
     ├───crypto
     ├───mailModule
     └───protocols
         └───dto
-```
+</code></pre>
