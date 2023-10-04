@@ -148,4 +148,11 @@
     ├───mailModule
     └───protocols
         └───dto
-</code></pre>
+</code></pre> 
+<h2>Explicação da estrutura do backend</h2>
+<ul>
+  <li>infra: Pasta responsável de armazenar todas as entidades, dados de conexão, migrações e configuração do banco de dados do projeto; </li>
+  <li>shared: Local onde foram desenvolvidas todas as funcionalidades que são comuns a todos os demais módulos do sistema, como a parte criptografia, envio de emails e padrões de respostas;</li>
+  <li>_modules: Cada entidade do sistema possui o seu módulo que é a parte onde ficam localizados todos os casos de uso de cada um deles. Todos os endpoints são criados dentro das controllers auxiliados pelos dtos relacionados. Cada ação do módulo é separado dentro de um useCase, facilitando localizar e desenvolver uma funcionalidade sem interferir nas demais.</li>
+</ul>
+<h2>Estrutura do frontend do projeto</h2>
