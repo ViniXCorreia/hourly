@@ -156,3 +156,85 @@
   <li>_modules: Cada entidade do sistema possui o seu módulo que é a parte onde ficam localizados todos os casos de uso de cada um deles. Todos os endpoints são criados dentro das controllers auxiliados pelos dtos relacionados. Cada ação do módulo é separado dentro de um useCase, facilitando localizar e desenvolver uma funcionalidade sem interferir nas demais.</li>
 </ul>
 <h2>Estrutura do frontend do projeto</h2>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>
+src
+├───app
+│   ├───dtos
+│   ├───entities
+│   ├───interceptor
+│   ├───services
+│   ├───shared
+│   │   └───directives
+│   └───_modules
+│       ├───auth
+│       │   ├───forgot-password
+│       │   └───login
+│       └───pages
+│           ├───collaborator
+│           │   ├───edit
+│           │   └───list
+│           ├───company
+│           │   ├───edit
+│           │   └───list
+│           ├───customer
+│           │   ├───company-view
+│           │   ├───create-schedule
+│           │   ├───enter-queue
+│           │   ├───find-company
+│           │   ├───history
+│           │   └───view-queue
+│           ├───layout
+│           │   ├───api
+│           │   └───service
+│           ├───profile
+│           │   ├───change-password
+│           │   ├───profile-collaborator
+│           │   ├───profile-company
+│           │   └───profile-customer
+│           ├───queue
+│           │   └───queue-history
+│           ├───reports
+│           │   ├───collaborator-report
+│           │   └───company-report
+│           ├───schedule
+│           │   └───schedule-history
+│           └───service
+│               ├───edit
+│               └───list
+├───assets
+│   ├───demo
+│   │   ├───data
+│   │   ├───images
+│   │   │   ├───access
+│   │   │   ├───avatar
+│   │   │   ├───blocks
+│   │   │   │   ├───hero
+│   │   │   │   └───logos
+│   │   │   ├───error
+│   │   │   ├───flag
+│   │   │   ├───galleria
+│   │   │   ├───landing
+│   │   │   ├───login
+│   │   │   ├───nature
+│   │   │   ├───notfound
+│   │   │   └───product
+│   │   └───styles
+│   │       └───flags
+│   └───layout
+│       ├───images
+│       │   └───themes
+│       └───styles
+│           ├───layout
+│           └───theme
+└───environments
+</code></pre> 
+<h2>Explicação da estrutura do frontend</h2>
+<ul>
+  <li>entities: Mapeamento das entidades que seram utilizadas no sistema;</li>
+  <li>interceptor: Interceptadores para validações de códigos https e apresentações de erros;</li>
+  <li>services: Onde são montadas as requisições para a API;</li>
+  <li>shared: Onde são montados serviços e diretivas para ser utilizados em todo o projeto;</li>
+  <li>_modules: Todas as páginas do sistemas com cada tela separada e todas as suas telas e funcionalidades;</li>
+  <li>assets: Imagens e padrões de layout utilizados dentro do sistema;</li>
+  <li>environments: Onde ficam definidas as variáveis de ambiente que indicam se o sistema está apontando para desenvolvimento ou produção.</li>
+</ul>
