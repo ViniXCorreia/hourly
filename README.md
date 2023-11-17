@@ -2,7 +2,7 @@
 
 <h2>Descrição</h2> 
 
-<p>O sistema Hourly foi desenvolvido com o ituito de ser uma plataforma simples e funcional voltado para micro e pequenos empresários do ramo de beleza masculina que possuem barbearias. O mercado de beleza masculina vem ganhando reconhecimento internacional sendo um mercado em ascensão e atraindo uma série de novos empresários e clientes. Novas barbearias são abertas todos os meses e os empresários buscam por um modo de fazer uma gestão simples dos seus atendimento e fornece para seus clientes mais autonomia.
+<p>O sistema Hourly foi desenvolvido com o intuito de ser uma plataforma simples e funcional, voltada para micro e pequenos empresários do ramo de beleza masculina que possuem barbearias. O mercado de beleza masculina vem ganhando reconhecimento internacional, sendo um mercado em ascensão e atraindo uma série de novos empresários e clientes. Novas barbearias são abertas todos os meses e os empresários buscam por um modo de fazer uma gestão simples dos seus atendimentos, com o objetivo de fornecer mais autonomia aos seus clientes.
 
 <h2>Equipe:</h2> 
 
@@ -26,14 +26,15 @@
 </table>
 
 <h2>Funcionalidades</h2>
-<p>O sistema Hourly oferece para os seus usuários as seguintes funcionaldiades:</p>
+<p>O sistema Hourly oferece para os seus usuários as seguintes funcionalidades:</p>
 <ul>
-  <li>Agendamento de horários: O sistema de agendamento desenvolvido na plataforma Hourly permite que os usuários os empreendedores consigam gerir de melhor forma seus agendamentos. Para os usuários a plataforma oferece uma maneira simples e intuitiva de agendar os horários na barbearia desejada e com o profissional desejado. Já para os empresários, o sistema de agendamento possui inteligência para otimizar o tempo dos atendimentos, evitando ociosidade e garantindo um melhor aproveitamento do dia do profissional.</li>
-  <li>Fila online: Os usuários que tem a necessidade de realizar um serviço e preferem não agendar um horário, podem entrar em uma fila online e garantir seu atendimento assim que possível. O sistema de fila foi pensado para que não há acumulo de pessoas dentro da barbearia e que os clientes não fiquem aguardando no estabelecimento sem a real necessidade. Com isso, os empresários também conseguem otimizar o seu tempo e garantir que espaços do dia que ficariam vazios sejam preenchidos por esses clientes.</li>
-  <li>Avaliação de serviços: Os usuários podem dar notas de 0 - 5 para os atendimentos recebidos e também deixar um breve comentários sobre as suas impressões. Isso auxília o empresário a garantir que os serviços entregues dentro do seu estabelecimento estejam sempre da melhor forma possível para os seus clintes, pois é através desses feedbacks manter o que está dando certo e melhorar pontos que julgar necessário.</li>
-  <li>Fidelização: O estabelecimento pode criar um plano de fidelização para os seus clientes, fazendo com que os mesmos recebam uma porcentagem de desconto depois de um determinado número de serviços executados. Isso faz com que os clientes se tornem assiduos do estabelecimento</li>
+  <li><b>Agendamento de horários:</b> O sistema de agendamento desenvolvido na plataforma Hourly, permite que os usuários e os empreendedores consigam gerir de melhor forma seus agendamentos. Para os usuários, a plataforma oferece uma maneira simples e intuitiva de agendar seus serviços, na barbearia desejada e com o profissional da sua preferência. Para os empresários, o sistema de agendamento possui inteligência para otimizar o tempo dos atendimentos, evitando ociosidade e garantindo um melhor aproveitamento do dia do profissional.</li>
+  <li><b>Fila online:</b> Os usuários que tem a necessidade de realizar um serviço e preferem não agendar um horário, podem entrar em uma fila online e garantir seu atendimento assim que possível. O sistema de fila foi pensado, para que não haja acúmulo de pessoas dentro da barbearia e que os clientes não fiquem aguardando no estabelecimento, sem a real necessidade. Com isso, os empresários também conseguem otimizar o tempo da sua equipe e garantir que espaços do dia, os quais ficariam vazios, sejam preenchidos por esses clientes.</li>
+  <li><b>Avaliação de serviços:</b> Os usuários podem dar notas de 0 - 5 para os atendimentos recebidos e também deixar um breve comentários, sobre as suas impressões. Isso auxilia o empresário, a garantir que os serviços prestados dentro do seu estabelecimento, estejam sempre com a melhor qualidade possível, para os seus clintes, pois é através desses feedbacks que tudo se manterá dando certo, além de oportunizar um espaço de comunicação e melhoria em situações que julgar necessário.</li>
+  <li><b>Fidelização:</b> O estabelecimento pode criar um plano de fidelização para os seus clientes, fazendo com que os mesmos recebam uma porcentagem de desconto depois de um determinado número de serviços executados. Isso faz com que os clientes se tornem assíduos do estabelecimento.</li>
 </ul>
 <h2>Tecnologias Utilizadas</h2>
+-> Sugiro incluir aqui, os logotipos das tecnologias utilizadas, mantendo as descrições existentes abaixo de cada imagem.
 <ul>
   <li>FrontEnd: HTML, CSS, Javascript associados ao framework Angular</li>
   <li>Backend: Node.js utilizando framework NestJs</li>
@@ -151,9 +152,9 @@
 </code></pre> 
 <h2>Explicação da estrutura do backend</h2>
 <ul>
-  <li>infra: Pasta responsável de armazenar todas as entidades, dados de conexão, migrações e configuração do banco de dados do projeto; </li>
-  <li>shared: Local onde foram desenvolvidas todas as funcionalidades que são comuns a todos os demais módulos do sistema, como a parte criptografia, envio de emails e padrões de respostas;</li>
-  <li>_modules: Cada entidade do sistema possui o seu módulo que é a parte onde ficam localizados todos os casos de uso de cada um deles. Todos os endpoints são criados dentro das controllers auxiliados pelos dtos relacionados. Cada ação do módulo é separado dentro de um useCase, facilitando localizar e desenvolver uma funcionalidade sem interferir nas demais.</li>
+  <li>infra: Pasta responsável por armazenar todas as entidades, dados de conexão, migrações e configuração do banco de dados do projeto; </li>
+  <li>shared: Local onde foram desenvolvidas todas as funcionalidades que são comuns a todos os demais módulos do sistema, como a parte de criptografia, envio de emails e padrões de respostas;</li>
+  <li>_modules: Cada entidade do sistema possui o seu módulo, que é a parte onde ficam localizados todos os casos de uso de cada um deles. Todos os endpoints são criados dentro das classes de controle (controllers) auxiliados pelas classes de acesso aos dados (dtos) relacionados. Cada ação do módulo é separado dentro de um useCase, facilitando localizar e desenvolver uma funcionalidade sem interferir nas demais.</li>
 </ul>
 <h2>Estrutura do frontend do projeto</h2>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>
@@ -230,11 +231,11 @@ src
 </code></pre> 
 <h2>Explicação da estrutura do frontend</h2>
 <ul>
-  <li>entities: Mapeamento das entidades que seram utilizadas no sistema;</li>
+  <li>entities: Mapeamento das entidades utilizadas pelo sistema;</li>
   <li>interceptor: Interceptadores para validações de códigos https e apresentações de erros;</li>
-  <li>services: Onde são montadas as requisições para a API;</li>
-  <li>shared: Onde são montados serviços e diretivas para ser utilizados em todo o projeto;</li>
-  <li>_modules: Todas as páginas do sistemas com cada tela separada e todas as suas telas e funcionalidades;</li>
+  <li>services: Onde são montadas as requisições para a API do backend;</li>
+  <li>shared: Onde são hospedados os serviços e as diretivas para se utilizar em todo o projeto;</li>
+  <li>_modules: Todas as páginas do sistema, com cada tela separada e toda a sua estrutura e funcionalidades;</li>
   <li>assets: Imagens e padrões de layout utilizados dentro do sistema;</li>
-  <li>environments: Onde ficam definidas as variáveis de ambiente que indicam se o sistema está apontando para desenvolvimento ou produção.</li>
+  <li>environments: Onde ficam definidas as variáveis de ambiente, que indicam se o sistema está apontando para o ambiente de desenvolvimento ou para o ambiente de produção.</li>
 </ul>
